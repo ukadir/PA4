@@ -4,6 +4,8 @@ In this Programming Assignment, you will be assessing your understanding of Sets
 ## Part 0: Weekly Reflection Survey (5 points)
 Complete this weekly reflection survey: https://forms.gle/bvFS7BPP6brGXn8B9
 
+Also, if you haven't already completed the degree planning assignment, please do so as soon as possible.
+
 ## Part 1: Implementing the Set ADT (40 points)
 The [Set Abstract Data Type (ADT)](https://en.wikipedia.org/wiki/Set_(abstract_data_type)) is an ADT that can store unique elements. Generally, the Set ADT is defined by the following operations:
 * ``size``: Return the number of elements stored in the set
