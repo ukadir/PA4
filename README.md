@@ -9,7 +9,7 @@ Also, if you haven't already completed the degree planning assignment, please do
 ## Part 1: Implementing the Set ADT (40 points)
 The [Set Abstract Data Type (ADT)](https://en.wikipedia.org/wiki/Set_(abstract_data_type)) is an ADT that can store unique elements. Generally, the Set ADT is defined by the following operations:
 * ``size``: Return the number of elements stored in the set
-* ``insert(x)``: Insert element ``x`` into this set (don't allowing duplicates)
+* ``insert(x)``: Insert element ``x`` into this set (don't allow duplicates)
 * ``remove(x)``: Remove element ``x`` from this set (if it exists)
 * ``find(x)``: Determine whether or not ``x`` exists in this set
 
@@ -34,7 +34,7 @@ In this repository, there is a file called [``RedBlackTreeSet.cpp``](RedBlackTre
 In this repository, there is a file called [``HashTableSet.cpp``](HashTableSet.cpp) that contains initial steps towards implementing the Set ADT using a Hash Table via the C++ [``unordered_set``](http://www.cplusplus.com/reference/unordered_set/unordered_set/) class. Function headers (with usage details) are included in [``Set.h``](Set.h). Your task is to fill in the missing code.
 
 ## Part 2: Implementing a Multiway Trie (MWT) (30 points)
-Imagine we want to insert *n* elements of length *k* into our set. Array Lists, Linked Lists, and Red-Black Trees all scale as a function of *n* in the average and worst cases, and although Hash Tables are O(*k*) in the average case, they scale as a function of *n* in the worst case, and they have no inherent order. Instead, if we implement the Set ADT using a Multiway Trie, our find, insert, and remove operations will all be O(*k*) in the worst case, meaning our data structure's runtime will not worsen as *n* increases, and we can iterate over are elements in sorted order.
+Imagine we want to insert *n* elements of length *k* into our set. Array Lists, Linked Lists, and Red-Black Trees all scale as a function of *n* in the average and worst cases, and although Hash Tables are O(*k*) in the average case, they scale as a function of *n* in the worst case, and they have no inherent order. Instead, if we implement the Set ADT using a Multiway Trie, our find, insert, and remove operations will all be O(*k*) in the worst case, meaning our data structure's runtime will not worsen as *n* increases, and we can iterate over our elements in sorted order.
 
 ### Task: Edit [``MultiwayTrieSet.cpp``](MultiwayTrieSet.cpp) (30 points)
 In this repository, there is a file called [``MultiwayTrieSet.cpp``](MultiwayTrieSet.cpp) that contains initial steps towards implementing the Set ADT using a Multiway Trie. Function headers (with usage details) are included in [``Set.h``](Set.h). Your task is to fill in the missing code.
