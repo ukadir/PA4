@@ -81,7 +81,6 @@ int main() {
             pair.second->remove(curr);
             if(count != pair.second->size() || pair.second->find(curr)) {
                 success[pair.first] = false;
-                break;
             }
         }
     }
