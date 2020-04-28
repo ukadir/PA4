@@ -156,5 +156,7 @@ class MultiwayTrieSet : public Set {
          * Total number of elements currently in the MWT
          */
         unsigned int numElements;
+
+        void RecursiveDestructor(Node* n);
 };
 #endif

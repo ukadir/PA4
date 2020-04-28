@@ -15,6 +15,33 @@ MultiwayTrieSet::MultiwayTrieSet() {
  */
 MultiwayTrieSet::~MultiwayTrieSet() {
     /* YOUR CODE HERE */
+    /*RecursiveDestructor(root);*/
+    RecursiveDestructor(root);
+}
+
+void MultiwayTrieSet::RecursiveDestructor(Node* n) {
+    if(n->children.empty()) {
+        delete n;
+        return;
+    }
+
+  /*  while(!(n->children.empty())) {
+        unordered_map<char, Node*>::iterator it;
+
+        for(it = n->children.begin(); it != n->children.end(); it++) {
+            RecursiveDestructor(it->second);
+        }
+    }*/
+    unordered_map<char, Node*>::iterator it;
+    /*int count =0;*/
+    for(it = n->children.begin(); it != n->children.end(); it++) {
+        /*cout << count;
+        cou8*/
+        RecursiveDestructor(it->second);
+    }
+    
+
+    delete n;
 }
 
 /**
