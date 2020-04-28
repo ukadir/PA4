@@ -15,23 +15,22 @@ MultiwayTrieSet::MultiwayTrieSet() {
  */
 MultiwayTrieSet::~MultiwayTrieSet() {
     /* YOUR CODE HERE */
-    /*RecursiveDestructor(root);*/
-   // RecursiveDestructor(root);
+    RecursiveDestructor(root);
 }
-/*
+
 void MultiwayTrieSet::RecursiveDestructor(Node* n) {
     if(n->children.empty()) {
         delete n;
         return;
     }
 
-  / *  while(!(n->children.empty())) {
+  /*  while(!(n->children.empty())) {
         unordered_map<char, Node*>::iterator it;
 
         for(it = n->children.begin(); it != n->children.end(); it++) {
             RecursiveDestructor(it->second);
         }
-    }* /  
+    }*/  
     unordered_map<char, Node*>::iterator it;
     for(it = n->children.begin(); it != n->children.end(); it++) {
         
@@ -40,7 +39,7 @@ void MultiwayTrieSet::RecursiveDestructor(Node* n) {
     
 
     delete n;
-}*/
+}
 
 /**
  * Implement the MultiwayTrieSet methods correctly

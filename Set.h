@@ -157,6 +157,6 @@ class MultiwayTrieSet : public Set {
          */
         unsigned int numElements;
 
-        /*void RecursiveDestructor(Node* n);*/
+        void RecursiveDestructor(Node* n);
 };
 #endif
